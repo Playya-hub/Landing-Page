@@ -1,4 +1,4 @@
-# Ava
+# Playya
 
 A landing page template.
 
