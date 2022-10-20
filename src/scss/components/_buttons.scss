@@ -1,5 +1,11 @@
 .button {
     display: inline-flex;
+	background: mix(color(primary, 3), color(primary, 1));
+    background: linear-gradient(65deg, color(primary, 3) 0, color(primary, 1) 100%);
+	&:hover {
+        background: lighten(mix(color(primary, 3), color(primary, 1)), 1%);
+        background: linear-gradient(65deg, lighten(color(primary, 3), 1%) 0, lighten(color(primary, 1), 1%) 100%);
+    color: color(typography, 1i) !important;
     @include font-size(9, mobile, true, false, true);
     @if ( get-font-size(9, desktop) != get-font-size(9, mobile) ) {
         @include media( '>medium' ) {
